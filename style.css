@@ -162,11 +162,24 @@ header p{
     width: 60%;
     margin: 0 auto;
 }
+
 .combat-images{
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 4em;
+    justify-items: center;
+    align-items: start;
+    margin: 2em 0em;
+    height: 11em;
+}
+
+.combat-images .ability-low{
+    align-self: flex-end;
+}
+
+.combat-images .ability-mid{
+    align-self: center;
+}
+.combat-images .item p{
+    opacity: 0;
 }
 
 /* Constellation */
