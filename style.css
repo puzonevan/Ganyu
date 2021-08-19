@@ -179,7 +179,27 @@ header p{
     align-self: center;
 }
 .combat-images .item p{
-    opacity: 0;
+    margin: .75em 0em;
+    opacity: 1;
+}
+.combat-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.combat-information h3{
+    font-size: 2.5em;
+    color: #423946;
+    letter-spacing: .1em;
+    margin-bottom: 1em;
+}
+.combat-information p{
+    border-top: 1.5px solid #423946;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 2em;
+    padding: 1.2em;
 }
 
 /* Constellation */
