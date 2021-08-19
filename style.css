@@ -44,11 +44,12 @@ body.svg{
     overflow: hidden;
 }
 
-.header-gif video, .image-break img{
+.header-gif video, .image-video-break img, .image-video-break video{
     max-width: 100%;
     height: auto;
     display: block;
     z-index: -1;
+    
 }
 
 header p{
@@ -151,11 +152,16 @@ header p{
 }
 
 /* Mid Video Section */
-.image-break{
+.image-video-break{
     width: 60%;
     height: auto;
     overflow: hidden;
     margin: 5em auto;
+    transition: display 2s;
+}
+.image-video-break video{
+    display: none;
+    transition: display 2s;
 }
 
 /* Combat */
