@@ -140,6 +140,8 @@ header p{
     height: auto;
     display: block;
     margin: 0 auto;
+    padding: .5em;
+    transition: .3s;
 }
 
 .item p{
@@ -167,8 +169,8 @@ header p{
     display: flex;
     justify-items: center;
     align-items: start;
-    margin: 2em 0em;
-    height: 11em;
+    padding: 2em;
+    height: 14em;
 }
 
 .combat-images .ability-low{
@@ -180,8 +182,10 @@ header p{
 }
 .combat-images .item p{
     margin: .75em 0em;
-    opacity: 1;
+    opacity: 0;
+    transition: .3s;
 }
+
 .combat-information{
     display: flex;
     flex-direction: column;
@@ -207,7 +211,6 @@ header p{
     padding: 7em 0em;
     width: 60%;
     margin: 0 auto;
-    
 }
 
 .const-images{

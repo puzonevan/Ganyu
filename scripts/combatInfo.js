@@ -44,11 +44,20 @@ const combatImageContainer = document.getElementById('abilities');
 const combatImageChildren = [...combatImageContainer.children];
 
 combatImageChildren.forEach((ability, index) => {
-    console.log(ability);
-    console.log(index);
+    
+    ability.addEventListener('mouseover', function(e) {
+        ability.lastElementChild.style.opacity = "1";
+        ability.firstElementChild.style.transform = "scale(1.1)";
+    });
+    ability.addEventListener('mouseout', function(e) {
+        ability.lastElementChild.style.opacity = "0";
+        ability.firstElementChild.style.transform = "scale(1)";
+    });
+
     ability.addEventListener('click', function(e){
         combatInfoContainer.firstElementChild.innerHTML = combatInfo[index].name;
         combatInfoContainer.lastElementChild.innerHTML = combatInfo[index].description;
+        combatImageContainer.scrollIntoView({behavior: 'smooth'});
     });
 });
 
