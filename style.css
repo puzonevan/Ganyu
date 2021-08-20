@@ -159,23 +159,23 @@ header p{
 
 /* Mid Video Section */
 .image-video-section{
-    padding: 8em 0em;
+    padding: 5em 0em;
     background: #333333;
+}
+.image-video-section svg{
+    padding: 0em 8.5em;
 }
 .image-video-break{
     width: 60%;
     height: auto;
     overflow: hidden;
-    margin: 5em auto;
+    margin: 1em auto;
 }
 .image-video-break video{
     display: none;
     transition: display 2s;
 }
-.image-video-section svg{
-    position: absolute;
-    left: 0;
-}
+
 
 /* Combat */
 .combat-section{
@@ -189,7 +189,6 @@ header p{
     justify-content: center;
     align-items: center;
 }
-
 
 .combat-images{
     display: flex;
@@ -281,6 +280,9 @@ header p{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: dash 2s linear forwards;
+}
+.border-image{
+    transform: scale(1.4);
 }
 
 @keyframes dash{

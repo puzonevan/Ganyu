@@ -63,18 +63,3 @@ combatImageChildren.forEach((ability, index) => {
 
 });
 
-combatBorder.addEventListener('mouseover', (e) =>{
-    combatBorder.style.transform = "scale(1.01)";
-});
-combatBorder.addEventListener('mouseout', (e) =>{
-    combatBorder.style.transform = "scale(1)";
-});
-
-combatBorder.addEventListener('click', (e)=>{
-    if(combatInfoContainer.style.display === "flex"){
-        combatInfoContainer.style.display = "none";
-    }
-    else{
-        combatInfoContainer.style.display = "flex";
-    }
-});
