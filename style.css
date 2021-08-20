@@ -8,7 +8,7 @@
 body{
     font-family: "Georama", sans-serif;
     font-size: 1em;
-    background: radial-gradient(circle, rgba(241,242,240,1) 0%, rgba(215,235,249,1) 100%);
+    background-color: #EEEEEE;
 }
 
 h2{
@@ -20,21 +20,19 @@ h2{
     text-transform: uppercase;
     text-align: center;
 
-    padding-top: .5em;
 }
 
 video{
+    filter: contrast(1.15);
+}
+header video{
     filter: contrast(1.25);
 }
 
 svg{
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
 }
 
-body.svg{
-    width: 100%;
-}
 
 
 /* Header: video and quote */
@@ -147,17 +145,20 @@ header p{
 
 .item p{
     font-size: 1em;
-    color: #423946;
+    color: #0e1111;
     text-align: center;
 }
 
 /* Mid Video Section */
+.image-video-section{
+    padding: 8em 0em;
+    background: #333333;
+}
 .image-video-break{
     width: 60%;
     height: auto;
     overflow: hidden;
     margin: 5em auto;
-    transition: display 2s;
 }
 .image-video-break video{
     display: none;
@@ -171,12 +172,20 @@ header p{
     margin: 0 auto;
 }
 
+.combat-title, .constellation-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .combat-images{
     display: flex;
     justify-items: center;
     align-items: start;
-    padding: 2em;
+    padding: 1em;
     height: 14em;
+
 }
 
 .combat-images .ability-low{
@@ -196,7 +205,7 @@ header p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 3em;
 }
 .combat-information h3{
     font-size: 2.5em;
@@ -210,6 +219,9 @@ header p{
     font-size: 1.1em;
     line-height: 2em;
     padding: 1.2em;
+}
+.rotated-border{
+    transform: rotate(180deg);
 }
 
 /* Constellation */
