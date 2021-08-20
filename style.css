@@ -175,6 +175,15 @@ header p{
     display: none;
     transition: display 2s;
 }
+.image-video-section p{
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'STIX Two Text', serif;
+    color: white;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: right;
+}
 
 
 /* Combat */
