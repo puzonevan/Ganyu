@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-snap-type: y mandatory;
+}
 body{
     font-family: "Georama", sans-serif;
     font-size: 1em;
@@ -31,6 +34,10 @@ header video{
 
 svg{
     display: inline-block;
+}
+
+header, div, svg{
+    scroll-snap-align: start;
 }
 
 
@@ -163,6 +170,10 @@ header p{
 .image-video-break video{
     display: none;
     transition: display 2s;
+}
+.image-video-section svg{
+    position: absolute;
+    left: 0;
 }
 
 /* Combat */
