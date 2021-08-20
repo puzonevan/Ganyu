@@ -34,6 +34,7 @@ header video{
 
 svg{
     display: inline-block;
+    transition: .5s;
 }
 
 header, div, svg{
@@ -196,7 +197,6 @@ header p{
     align-items: start;
     padding: 1em;
     height: 14em;
-
 }
 
 .combat-images .ability-low{
@@ -217,6 +217,7 @@ header p{
     flex-direction: column;
     align-items: center;
     padding: 3em;
+    transition: .5s;
 }
 .combat-information h3{
     font-size: 2.5em;

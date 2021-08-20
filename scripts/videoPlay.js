@@ -14,4 +14,5 @@ for(var i = 0; i < imageVideo.length; i++){
         container.firstElementChild.style.display="block";
         container.lastElementChild.style.display="none";
     })
+    
 }

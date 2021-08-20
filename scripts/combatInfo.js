@@ -42,6 +42,7 @@ const combatInfo = [
 const combatInfoContainer = document.getElementById("combat-info");
 const combatImageContainer = document.getElementById('abilities');
 const combatImageChildren = [...combatImageContainer.children];
+const combatBorder = document.getElementById('borderOpen');
 
 combatImageChildren.forEach((ability, index) => {
     
@@ -59,5 +60,21 @@ combatImageChildren.forEach((ability, index) => {
         combatInfoContainer.lastElementChild.innerHTML = combatInfo[index].description;
         combatImageContainer.scrollIntoView({behavior: 'smooth'});
     });
+
 });
 
+combatBorder.addEventListener('mouseover', (e) =>{
+    combatBorder.style.transform = "scale(1.01)";
+});
+combatBorder.addEventListener('mouseout', (e) =>{
+    combatBorder.style.transform = "scale(1)";
+});
+
+combatBorder.addEventListener('click', (e)=>{
+    if(combatInfoContainer.style.display === "flex"){
+        combatInfoContainer.style.display = "none";
+    }
+    else{
+        combatInfoContainer.style.display = "flex";
+    }
+});
