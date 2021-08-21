@@ -53,6 +53,11 @@ header, div, svg{
     display: block;
 }
 
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
 header p{
     font-family: "STIX Two Text", serif;
     font-style: italic;
@@ -117,16 +122,17 @@ header p{
 
 .talents-ascension{
     display: block;
-    width: 70%;
+    width: 80%;
     float: right;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0em 2.5em;
+    margin: 0 3em;
 }
 
 .talents-ascension h2{
+    font-size: 2em;
     border-bottom: 1px solid #423946;
 }
 
@@ -147,7 +153,6 @@ header p{
     margin: 0 auto;
     transition: .3s;
 }
-
 .item p{
     font-size: 1em;
     color: #0e1111;
@@ -156,32 +161,25 @@ header p{
 
 /* Mid Video Section */
 .image-video-section{
-    padding: 5em 0em;
+    padding: 6em 0em;
     background: #333333;
 }
 .image-video-section svg{
     padding: 0em 8.5em;
 }
-.image-video-break image{
-    width: 60%;
-    margin: 1em auto;
-}
-.image-video-section video, {
-    width: 60%;
-    margin: 1em auto;
+.image-video-section video{
     display: none;
-    transition: display 2s;
 }
 .image-video-section p{
-    width: 60%;
-    margin: 0 auto;
     font-family: 'STIX Two Text', serif;
     color: white;
     font-style: italic;
     font-size: 1.5em;
     text-align: right;
 }
-
+.paper-lantern img{
+    animation: float 5s ease-in-out infinite;
+}
 
 /* Combat */
 .combat-section{
@@ -271,6 +269,7 @@ header p{
         stroke-dashoffset: 0;
     }
 }
+
 
 @media only screen and (max-width: 480px){
     header p{
