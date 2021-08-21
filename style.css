@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+/* Universals */
 *{
     margin: 0;
     padding: 0;
 }
 html{
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 body{
-    font-family: "Georama", sans-serif;
-    font-size: 1em;
     background-color: #EEEEEE;
 }
 
-h2{
+h1, h2, h3, h4, h5, h6{
     font-family: 'STIX Two Text', serif;
-    font-size: 3.5em;
     font-weight: bold;
     color: #423946;
     letter-spacing: .1em;
     text-transform: uppercase;
-    text-align: center;
-
+}
+p{
+    font-family: "Georama", sans-serif;
 }
 
 video{
@@ -41,21 +41,16 @@ header, div, svg{
     scroll-snap-align: start;
 }
 
-
-
-/* Header: video and quote */
-.header-gif, .item, .video-section{
+.image-video-container{
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-.header-gif video, .image-video-break img, .image-video-break video{
+.image-video-container video, .image-video-container img{
     max-width: 100%;
     height: auto;
     display: block;
-    z-index: -1;
-    
 }
 
 header p{
@@ -94,7 +89,6 @@ header p{
 /* Talents/Ascension Materials */
 .talents-ascension-section {
     height: 950px;
-    opacity: .9;
     padding: 1em 0em;
     display: flex;
     margin: 5em 0em;
@@ -138,16 +132,19 @@ header p{
 
 .monster, .shivada, .books{
     display: flex;
-    justify-content: center;
-    margin: .5em 0em;
+    justify-items: center;
+    height: 9em;
 }
-
+.item{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
 .item img{
-    max-width: 50%;
-    height: auto;
+    max-width: 100%;
+    max-height: 50%;
     display: block;
     margin: 0 auto;
-    padding: .5em;
     transition: .3s;
 }
 
@@ -165,13 +162,13 @@ header p{
 .image-video-section svg{
     padding: 0em 8.5em;
 }
-.image-video-break{
+.image-video-break image{
     width: 60%;
-    height: auto;
-    overflow: hidden;
     margin: 1em auto;
 }
-.image-video-break video{
+.image-video-section video, {
+    width: 60%;
+    margin: 1em auto;
     display: none;
     transition: display 2s;
 }
@@ -246,36 +243,11 @@ header p{
 
 /* Constellation */
 .constellation-section{
-    padding: 7em 0em;
+    padding: 5em 0em;
     width: 60%;
     margin: 0 auto;
 }
 
-.const-images{
-    display: flex;
-}
-
-.const-images .item{
-    display: flex;
-    padding: 2em;
-    margin: 1em;
-    align-items: center;
-    justify-content: center;
-}
-
-.const-images .item img{
-    margin: 0;
-}
-
-.const-images .item h3{
-    font-family: 'STIX Two Text', serif;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #423946;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .path{
     transform: scale(1.5);
