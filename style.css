@@ -146,14 +146,14 @@ header p{
     flex-direction: column;
     justify-content: center;
 }
-.item img{
+.talents-ascension .item img{
     max-width: 100%;
     max-height: 50%;
     display: block;
     margin: 0 auto;
     transition: .3s;
 }
-.item p{
+.talents-ascension .item p{
     font-size: 1em;
     color: #0e1111;
     text-align: center;
@@ -183,36 +183,41 @@ header p{
 
 /* Combat */
 .combat-section{
-    padding: 7em 0em;
-    width: 60%;
-    margin: 0 auto;
+    padding: 6em 0em;
+}
+.combat-section svg{
+    padding: 1.5em 0em;
 }
 
 .combat-title, .constellation-title{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
+}
+.combat-title h2{
+    font-size: 2.5em;
+    border-bottom: 1px solid #423946;
 }
 
 .combat-images{
     display: flex;
     justify-items: center;
     align-items: start;
-    padding: 1em;
+    padding: 1em 0em 3em 0em;
     height: 14em;
 }
-
+.combat-images .item img{
+    max-width: 70%;
+    max-height: 100%;
+    margin: 0 auto;
+    transition: .5s;
+}
 .combat-images .ability-low{
     align-self: flex-end;
 }
-
 .combat-images .ability-mid{
     align-self: center;
-}
-.combat-images .item p{
-    margin: .75em 0em;
-    opacity: 0;
-    transition: .3s;
 }
 
 .combat-information{
@@ -223,10 +228,11 @@ header p{
     transition: .5s;
 }
 .combat-information h3{
-    font-size: 2.5em;
+    font-size: 2.3em;
     color: #423946;
     letter-spacing: .1em;
     margin-bottom: 1em;
+    text-align: center;
 }
 .combat-information p{
     border-top: 1.5px solid #423946;

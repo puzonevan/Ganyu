@@ -47,18 +47,16 @@ const combatBorder = document.getElementById('borderOpen');
 combatImageChildren.forEach((ability, index) => {
     
     ability.addEventListener('mouseover', function(e) {
-        ability.lastElementChild.style.opacity = "1";
-        ability.firstElementChild.style.transform = "scale(1.1)";
+        ability.firstElementChild.style.transform = "scale(.9)";
     });
     ability.addEventListener('mouseout', function(e) {
-        ability.lastElementChild.style.opacity = "0";
         ability.firstElementChild.style.transform = "scale(1)";
     });
 
     ability.addEventListener('click', function(e){
         combatInfoContainer.firstElementChild.innerHTML = combatInfo[index].name;
         combatInfoContainer.lastElementChild.innerHTML = combatInfo[index].description;
-        combatImageContainer.scrollIntoView({behavior: 'smooth'});
+        combatBorder.scrollIntoView({behavior: 'smooth'});
     });
 
 });
