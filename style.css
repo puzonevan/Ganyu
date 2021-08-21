@@ -281,6 +281,14 @@ header p{
         width: 90%;
     }
 
+    .talents-ascension-section {
+        height: 700px;
+        margin: 0 1em;
+    }
+    .talents-ascension-section svg, .ganyu-splash{
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px){
