@@ -185,9 +185,7 @@ header p{
 .combat-section{
     padding: 6em 0em;
 }
-.combat-section svg{
-    padding: 1.5em 0em;
-}
+
 
 .combat-title, .constellation-title{
     display: flex;
@@ -225,7 +223,6 @@ header p{
     flex-direction: column;
     align-items: center;
     padding: 3em;
-    transition: .5s;
 }
 .combat-information h3{
     font-size: 2.3em;
@@ -284,36 +281,8 @@ header p{
         width: 90%;
     }
 
-    svg{
-        display: none;
-    }
-    .ganyu-splash{
-        display: none;
-    }
-    .talents-ascension {
-        background-position: 65% 0%;
-        width: 100%;
-    }
-    .talents-ascension h2{
-        font-size: 2em;
-    }
-    .item{
-        width: 30%;
-    }
-    .item img{
-        max-width: 80%;
-    }
-    .item p{
-        font-size: .75em;
-    }
-    .shivada, .monster{
-        flex-wrap: wrap;
-    }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px){
-    header p{
-        font-size: 2rem;
-    }
+    
 }
