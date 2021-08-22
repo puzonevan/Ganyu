@@ -41,6 +41,7 @@ header, div, svg{
     scroll-snap-align: start;
 }
 
+/* Image Video & Containers */
 .image-video-container{
     width: 100%;
     height: auto;
@@ -177,25 +178,18 @@ header p{
     font-size: 1.5em;
     text-align: right;
 }
-.paper-lantern img{
-    animation: float 5s ease-in-out infinite;
-}
 
 /* Combat */
 .combat-section{
     padding: 6em 0em;
 }
 
-
 .combat-title, .constellation-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 2em;
 }
 .combat-title h2{
     font-size: 2.5em;
-    border-bottom: 1px solid #423946;
+    text-align: center;
 }
 
 .combat-images{
@@ -206,7 +200,7 @@ header p{
     height: 14em;
 }
 .combat-images .item img{
-    max-width: 70%;
+    max-width: 65%;
     max-height: 100%;
     margin: 0 auto;
     transition: .5s;
@@ -280,14 +274,57 @@ header p{
         top: 9rem;
         width: 90%;
     }
+    header, div, svg{
+        scroll-snap-align: center;
+    }
+    .container{
+        width: 100%;
+    }
 
     .talents-ascension-section {
         height: 700px;
-        margin: 0 1em;
+        padding: 2em 0;
     }
     .talents-ascension-section svg, .ganyu-splash{
         display: none;
     }
+    .talents-ascension{
+        width: 100%;
+        margin: 0;
+    }
+    .monster, .shivada, .books{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        margin: 1em 0em;
+    }
+    .monster .item, .shivada .item, .books .item{
+        max-width: 20%;
+    }
+    .talents-ascension .item img{
+        max-height: 100%;
+        display: block;
+    }
+    .talents-ascension .item p{
+        font-size: .7em;
+    }
+    .talents-ascension h2{
+        margin: .5em 0em;
+    }
+
+    .image-video-section{
+        padding: 1em 0em;
+    }
+    .image-video-section svg{
+        padding: 0;
+    }
+    .image-video-section p{
+        padding-top: .2em;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    
 
 }
 
