@@ -37,7 +37,12 @@ svg{
     transition: .5s;
 }
 
-header, div, svg{
+html header, .talents-ascension-section, 
+.image-video-section 
+{
+    scroll-snap-align: center;
+}
+.combat-section{
     scroll-snap-align: start;
 }
 
