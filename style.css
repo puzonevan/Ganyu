@@ -279,9 +279,6 @@ header p{
         top: 9rem;
         width: 90%;
     }
-    header, div, svg{
-        scroll-snap-align: center;
-    }
     .container{
         width: 100%;
     }
