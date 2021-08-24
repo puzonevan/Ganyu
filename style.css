@@ -36,21 +36,26 @@ svg{
     transition: .5s;
 }
 
-.opening-section, .talents-ascension-section, .image-video-section, .combat-section{
+.opening-section, .talents-ascension-section, 
+.image-video-section, .combat-section, 
+.title-section, .constellation-section{
     height: 100vh;
     scroll-snap-align: start;
 }
 
 
-/* Opening Section */
-.opening-section {
+/* Opening/Titles Section */
+.opening-section, .title-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.opening-section h1{
+.opening-section h1, .title-section h1{
     font-size: 4em;
+}
+.title-section h2{
+    font-size: 3.5em;
 }
 
 /* Image Video & Containers */
@@ -165,68 +170,70 @@ svg{
 }
 
 /* Combat */
-.combat-section{
+.combat-section, 
+.constellation-section{
     padding: 6em 0em;
 }
 
-.combat-title, .constellation-title{
-    padding-bottom: 2em;
-}
-.combat-title h2{
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.combat-images{
+.combat-images, 
+.constellation-images{
     display: flex;
     justify-items: center;
     align-items: start;
     padding: 1em 0em 3em 0em;
     height: 14em;
 }
-.combat-images .item img{
+.combat-images .item img, 
+.constellation-images .item img{
     max-width: 65%;
     max-height: 100%;
     margin: 0 auto;
     transition: .5s;
 }
-.combat-images .ability-low{
+
+.combat-images .ability-low, 
+.constellation-images .ability-low{
     align-self: flex-end;
 }
-.combat-images .ability-mid{
+.combat-images .ability-mid, 
+.constellation-images .ability-mid{
     align-self: center;
 }
 
-.combat-information{
+.combat-information, 
+.constellation-information{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em;
 }
-.combat-information h3{
-    font-size: 2.3em;
-    color: #423946;
+
+.combat-information h3, 
+.constellation-information h3{
+    font-size: 2.5em;
+    color: #FFFFFF;
     letter-spacing: .1em;
     margin-bottom: 1em;
     text-align: center;
 }
-.combat-information p{
-    border-top: 1.5px solid #423946;
+.combat-information p, 
+.constellation-information p{
+    border-top: 1.5px solid #FFFFFF;
     text-align: justify;
     font-size: 1.1em;
     line-height: 2em;
     padding: 1.2em;
 }
-.rotated-border{
-    transform: rotate(180deg);
+
+.description{
+    color: #FFFFFF;
+}
+.description strong{
+    color: #70CFEC;
 }
 
-/* Constellation */
-.constellation-section{
-    padding: 5em 0em;
-    width: 60%;
-    margin: 0 auto;
-}
+
+
 
 
 .path{
