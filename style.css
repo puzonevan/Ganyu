@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: .1em;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 2px 7px 8px rgba(0,0,0,0.2), 
+    0px -4px 18px rgba(255,255,255,.1);
 }
 
 p{
@@ -148,6 +150,7 @@ svg{
     display: block;
     margin: 0 auto;
     transition: .3s;
+    
 }
 .talents-ascension .item p{
     font-size: 1em;
@@ -194,6 +197,9 @@ svg{
     max-height: 100%;
     margin: 0 auto;
     transition: .5s;
+    border-radius: 50%;
+    
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 25px 20px -20px;
 }
 
 .combat-images .ability-low, 
