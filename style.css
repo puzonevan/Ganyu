@@ -40,7 +40,9 @@ svg{
 
 .opening-section, .talents-ascension-section, 
 .image-video-section, .combat-section, 
-.title-section, .constellation-section{
+.title-section, .constellation-section, 
+.build-section, .lore-section, 
+.art-section{
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -272,26 +274,27 @@ svg{
 
 
 @media only screen and (max-width: 480px){
-    html{
+    /* html{
         scroll-snap-type: none;
+    } */
+
+    .opening-section h1, .title-section h1{
+        font-size: 2.5em;
+    }
+    .opening-section p{
+        font-size: .75em;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .title-section h2{
+        font-size: 1.75em;
     }
 
-    header p{
-        font-size: 1rem;
-        top: 9rem;
-        width: 90%;
-    }
     .container{
         width: 100%;
     }
     
-    header p{
-        position: static;
-        animation-name: none !important;
-    }
-    header .image-video-container{
-        display: none;
-    }
 
     .talents-ascension-section {
         height: 700px;
@@ -322,20 +325,7 @@ svg{
     }
     .talents-ascension h2{
         margin: .5em 0em;
-    }
-
-    .image-video-section{
-        padding: 1em 0em;
-    }
-    .image-video-section svg{
-        padding: 0;
-    }
-    .image-video-section p{
-        padding-top: .2em;
-        font-size: 1em;
-        text-align: center;
-    }
-    
+    }    
     
 
 }
