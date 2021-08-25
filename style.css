@@ -47,6 +47,10 @@ svg{
     scroll-snap-align: start;
 }
 
+.build-section{
+    height: 200vh;
+}
+
 
 /* Opening/Titles Section */
 .opening-section, .title-section {
@@ -179,6 +183,7 @@ svg{
     background-color: #F5F5F5;
     border-radius: .5em;
     padding: 1em 2em 2em 2em;
+    margin: 2em 0em;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 .build h2,.build .description, .weapons-artifacts h3, .weapons-artifacts h4, .weapons-artifacts h5{
