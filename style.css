@@ -63,9 +63,17 @@ svg{
     color: #F5F5F5;
     padding: .5em;
 }
+.opening-section img{
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 .title-section h2{
     font-size: 3.5em;
 }
+
 
 /* Image Video & Containers */
 .image-video-container{
@@ -160,26 +168,63 @@ svg{
     text-align: center;
 }
 
-/* Mid Video Section */
-.image-video-section{
+/* Weapons and Artifacts Section */
+.build-section{
     padding: 6em 0em;
-    background: #333333;
-}
-.image-video-section svg{
-    padding: 0em 8.5em;
-}
-.image-video-section video{
-    display: none;
-}
-.image-video-section p{
-    font-family: 'STIX Two Text', serif;
-    color: #ff0800;
-    font-style: italic;
-    font-size: 1.5em;
-    text-align: right;
 }
 
-/* Combat */
+.build{
+    width: 100%;
+    height: 70%;
+    background-color: #F5F5F5;
+    border-radius: .5em;
+    margin: 1em 0em;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.build h2, .weapons-artifacts h3, .weapons-artifacts h4{
+    font-family: "Georama", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    text-shadow: none;
+    text-transform: none;
+    font-weight: 500;
+    text-align: left;
+}
+.build h2{
+    color: #27233e;
+    padding: 1em;
+}
+
+.weapons-artifacts h3{
+    font-size: 1em;
+    color: #faf4b7;
+    font-weight: 400;
+}
+.weapons-artifacts h4{
+    font-size: .9em;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.weapons-artifacts p{
+    font-size: .8em;
+    width: 75%;
+    padding-top: .5em;
+}
+.weapons-artifacts{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.weapon, .artifact{
+    padding: 1em;
+    margin: 1em;
+    background-color: #333333;
+    border-radius: .3em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* Combat Section */
 .combat-section, 
 .constellation-section{
     padding: 6em 0em;
