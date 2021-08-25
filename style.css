@@ -181,7 +181,7 @@ svg{
     margin: 1em 0em;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-.build h2, .weapons-artifacts h3, .weapons-artifacts h4{
+.build h2, .weapons-artifacts h3, .weapons-artifacts h4, .weapons-artifacts h5{
     font-family: "Georama", sans-serif;
     font-size: 1.5em;
     letter-spacing: 0em;
@@ -196,17 +196,25 @@ svg{
 }
 
 .weapons-artifacts h3{
+    font-size: 1.3em;
+    color: #000000;
+    font-weight: 500;
+    padding: 0 1em;
+}
+.weapons-artifacts h4{
     font-size: 1em;
     color: #faf4b7;
     font-weight: 400;
 }
-.weapons-artifacts h4{
-    font-size: .9em;
-    color: #FFFFFF;
+.weapons-artifacts h5{
+    font-size: 1em;
+    color: #D5D5D5;
     font-weight: 400;
+    padding-top: .1em;
 }
 .weapons-artifacts p{
-    font-size: .8em;
+    color: #FFFFFF;
+    font-size: .9em;
     width: 75%;
     padding-top: .5em;
 }
@@ -214,6 +222,20 @@ svg{
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+.weapons, .artifacts{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.weapons-artifacts .or-text{
+    font-size: 1.1em;
+    text-align: center;
+    color: #27233e;
+    border-bottom: 1px solid #27233e;
+    padding: .3em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .weapon, .artifact{
