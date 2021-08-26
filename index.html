@@ -22,12 +22,12 @@
                 <stop offset="100%" style="stop-color:#ffffff;stop-opacity: .9" />
             </linearGradient>
             <linearGradient id="lightToDarkGold" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
-                <stop offset="0%" style="stop-color:#faf4b7;stop-opacity:.8" />
-                <stop offset="100%" style="stop-color:#BF953F;stop-opacity:.8" />
+                <stop offset="0%" style="stop-color:#faf4b7;stop-opacity:.9" />
+                <stop offset="100%" style="stop-color:#BF953F;stop-opacity:.9" />
             </linearGradient>
             <linearGradient id="darkToLightGold" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
-                <stop offset="0%" style="stop-color:#BF953F;stop-opacity:.8" />
-                <stop offset="100%" style="stop-color:#FCF6BA;stop-opacity:.8" />
+                <stop offset="0%" style="stop-color:#BF953F;stop-opacity:.9" />
+                <stop offset="100%" style="stop-color:#FCF6BA;stop-opacity:.9" />
             </linearGradient>
             <linearGradient id="lightToDarkBlack" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
                 <stop offset="0%" style="stop-color:#232b2b;stop-opacity:.8" />
@@ -152,8 +152,17 @@
         </svg>
     </div>
 
-    <div class="build-section container">
+    <div class="build-section">
+        <svg class="top-border" viewBox="0 0 151 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 43 .2 L 49.1 .2 L 49.1 6.5 " class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 43 1 L 46 1 L 46 3.5 L 48.3 3.5 L 48.3 6.5 "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 46.9 1 L 48.3 1 L 48.3 2.6 L 46.9 2.6 L 46.9 .8  "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 93.3 .2 L 99.4 .2 L 99.4 6.5 " class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 93.3 1 L 96.3 1 L 96.3 3.5 L 98.6 3.5 L 98.6 6.5 "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 97.2 1 L 98.6 1 L 98.6 2.6 L 97.2 2.6 L 97.2 .8  "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+        </svg>
         <div class="build">
+            </svg>
             <h2>Cryo DPS Build</h2>
             <p class="description">This build focuses on empowering Ganyu's charged attack with the Wanderer's Troupe
                 set since it amplifies both the initial hit and the AoE explosion from each shot.</p>
@@ -173,9 +182,9 @@
                     </div>
                     <h3 class="or-text">Or</h3>
                     <div class="weapon">
-                        <h4>The Stringless</h4>
-                        <h5>Elemental Mastery</h5>
-                        <p>Increases Elemental Skill and Elemental Burst DMG by 24/30/36/42/48%.</p>
+                        <h4>Prototype Crescent</h4>
+                        <h5>Atk</h5>
+                        <p>Aimed Shot hits on weak points increase Movement SPD by 10% and ATK by 36/45/54/63/72% for 10s.</p>
                         <div class="image-video-container">
                             <img src="ganyu/weapons/Weapon_Prototype_Crescent.png" alt="Prototype Crescent">
                         </div>
@@ -187,7 +196,7 @@
                         <h4>Wanderer's Troupe</h4>
                         <h5>ATK% / Cryo DMG / CRIT DMG</h5>
                         <p><strong>(2)</strong> Elemental Mastery +80 <br><br>
-                            <strong>(4)</strong>Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow.</p>
+                            <strong>(4)</strong> Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow.</p>
                         <div class="image-video-container">
                             <img src="ganyu/weapons/Item_Troupe_Wanderers.png" alt="Wanders Troupe">
                         </div>
@@ -212,23 +221,20 @@
                 </div>
             </div>
         </div>
-
         <div class="build">
-            <h2>Cryo DPS Build</h2>
-            <p class="description">This build focuses on empowering Ganyu's charged attack with the Wanderer's Troupe
-                set since it amplifies both the initial hit and the AoE explosion from each shot.</p>
+            <h2>Cryo Support Build</h2>
+            <p class="description">Ganyu is the premier Cryo sub DPS thanks to her high damage and uptime on her skills, even when not on the field.</p>
             <div class="weapons-artifacts">
                 <div class="weapons">
                     <h3>Weapon</h3>
                     <div class="weapon">
-                        <h4>Amos' Bow</h4>
-                        <h5>Atk</h5>
+                        <h4>Skyward Harp</h4>
+                        <h5>Crit Rate</h5>
                         <p>Increases CRIT DMG by 20/25/30/35/40%. 
                             Hits have a 60/70/80/90/100% chance to inflict a small AoE attack, 
-                            dealing 125% Physical ATK DMG. 
-                            Can only occur once every 4/3.5/3/2.5/2s.</p>
+                            dealing 125% Physical ATK DMG. Can only occur once every 4/3.5/3/2.5/2s.</p>
                         <div class="image-video-container">
-                            <img src="ganyu/weapons/Weapon_Amos'_Bow_2nd.png" alt="Amos' Bow">
+                            <img src="ganyu/weapons/Weapon_Skyward_Harp.png" alt="Amos' Bow">
                         </div>
                     </div>
                     <h3 class="or-text">Or</h3>
@@ -237,28 +243,18 @@
                         <h5>Elemental Mastery</h5>
                         <p>Increases Elemental Skill and Elemental Burst DMG by 24/30/36/42/48%.</p>
                         <div class="image-video-container">
-                            <img src="ganyu/weapons/Weapon_Prototype_Crescent.png" alt="Prototype Crescent">
+                            <img src="ganyu/weapons/Weapon_The_Stringless.png" alt="Prototype Crescent">
                         </div>
                     </div>
                 </div>
                 <div class="artifacts">
                     <h3>Artifacts</h3>
                     <div class="artifact">
-                        <h4>Wanderer's Troupe</h4>
+                        <h4>Noblesse Oblige</h4>
                         <h5>ATK% / Cryo DMG / CRIT DMG</h5>
-                        <p><strong>(2)</strong> Elemental Mastery +80 <br><br>
-                            <strong>(4)</strong>Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow.</p>
+                        <p><strong>(2)</strong> Elemental Burst DMG +20%</p>
                         <div class="image-video-container">
-                            <img src="ganyu/weapons/Item_Troupe_Wanderers.png" alt="Wanders Troupe">
-                        </div>
-                    </div>
-                    <h3 class="or-text">Or</h3>
-                    <div class="artifact">
-                        <h4>Gladiator's Finale</h4>
-                        <h5>ATK% / Cryo DMG / CRIT DMG</h5>
-                        <p><strong>(2)</strong> ATK +18%</p>
-                        <div class="image-video-container">
-                            <img src="ganyu/weapons/Item_Gladiator's_Nostalgia.png" alt="Gladiators Finale">
+                            <img src="ganyu/weapons/Item_Royal_Flora.png" alt="Wanders Troupe">
                         </div>
                     </div>
                     <div class="artifact">
@@ -266,12 +262,30 @@
                         <h5>ATK% / Cryo DMG / CRIT DMG</h5>
                         <p><strong>(2)</strong> Cryo DMG Bonus +15%</p>
                         <div class="image-video-container">
-                            <img src="ganyu/weapons/Item_Snowswept_Memory.png" alt="Blizzard Strayer">
+                            <img src="ganyu/weapons/Item_Snowswept_Memory.png" alt="Wanders Troupe">
+                        </div>
+                    </div>
+                    <h3 class="or-text">Or</h3>
+                    <div class="artifact">
+                        <h4>Noblesse Oblige</h4>
+                        <h5>ATK% / Cryo DMG / CRIT DMG</h5>
+                        <p><strong>(2)</strong> Elemental Burst DMG +20%<br><br>
+                            <strong>(4)</strong> Using an Elemental Burst increase all party members' ATK by 20% for 12s. This effect cannot stack.</p>
+                        <div class="image-video-container">
+                            <img src="ganyu/weapons/Item_Royal_Flora.png" alt="Wanders Troupe">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <svg class="bottom-border" viewBox="0 0 151 15" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
+            <path d="M 43 .2 L 49.1 .2 L 49.1 6.5 " class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent" ></path>
+            <path d="M 43 1 L 46 1 L 46 3.5 L 48.3 3.5 L 48.3 6.5 "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 46.9 1 L 48.3 1 L 48.3 2.6 L 46.9 2.6 L 46.9 .8  "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 93.3 .2 L 99.4 .2 L 99.4 6.5 " class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 93.3 1 L 96.3 1 L 96.3 3.5 L 98.6 3.5 L 98.6 6.5 "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+            <path d="M 97.2 1 L 98.6 1 L 98.6 2.6 L 97.2 2.6 L 97.2 .8  "class="path" stroke="url(#lightToDarkGold)" stroke-width=".4" fill="transparent"></path>
+        </svg>
     </div>
 
     <div class="title-section">

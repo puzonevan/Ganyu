@@ -47,10 +47,6 @@ svg{
     scroll-snap-align: start;
 }
 
-.build-section{
-    height: 200vh;
-}
-
 
 /* Opening/Titles Section */
 .opening-section, .title-section {
@@ -175,16 +171,29 @@ svg{
 /* Weapons and Artifacts Section */
 .build-section{
     padding: 6em 0em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 .build{
     width: 100%;
-    height: auto;
+    height: 70%;
     background-color: #F5F5F5;
-    border-radius: .5em;
+    border-radius: .3em;
     padding: 1em 2em 2em 2em;
-    margin: 2em 0em;
+    margin: 0em 2em;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.build-section .top-border{
+    position: absolute;
+    width: 100%;
+    top: 5em;
+}
+.build-section .bottom-border{
+    position: absolute;
+    width: 100%;
+    bottom: 19.6em;
 }
 .build h2,.build .description, .weapons-artifacts h3, .weapons-artifacts h4, .weapons-artifacts h5{
     font-family: "Georama", sans-serif;
@@ -226,7 +235,7 @@ svg{
 .weapons-artifacts p{
     color: #FFFFFF;
     font-size: .9em;
-    width: 65%;
+    width: 80%;
     padding-top: .5em;
 }
 .weapons-artifacts{
@@ -252,7 +261,7 @@ svg{
 .weapon, .artifact{
     position: relative;
     padding: 1em;
-    margin: 1em;
+    margin: 1.5em 1em;
     background-color: #333333;
     border-radius: .3em;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -260,11 +269,11 @@ svg{
 .weapon img, .artifact img{
     position: absolute; 
     right: 1em;
-    top: 1em;
+    top: -1em;
     border-radius: 50%;
     background-color: #F5F5F5;
     border: 2px solid #FFFFFF;
-    max-height: 70%;
+    max-height: 50%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
