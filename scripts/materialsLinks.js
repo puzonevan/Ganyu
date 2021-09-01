@@ -39,4 +39,26 @@ talentsAscensionMaterials.forEach((materialList, index) =>{
     })
 });
 
+// Loop through each list of materials
+talentsAscensionMaterials.forEach((materialList, index) =>{
+    // Loop through each material in each list
+    materialList.forEach((material) =>{
+
+        // Get the image that goes along with the material
+        const imageSibling = material.previousElementSibling;
+        
+        // Events: Mouse over and out 
+        imageSibling.addEventListener("mouseover", () =>{
+            imageSibling.style.transform = "scale(1.1)";
+        });
+        imageSibling.addEventListener("mouseout", () =>{
+            imageSibling.style.transform = "scale(1)";
+        });
+
+        // Events: Click to new tab
+        imageSibling.addEventListener("click", () =>{
+            window.open(materialLinks[index], "_blank");
+        })
+    })
+})
 
