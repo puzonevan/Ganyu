@@ -7,3 +7,36 @@ const materialLinks = [
     "https://genshin-impact.fandom.com/wiki/Crown_of_Insight#How_to_Obtain"
 ]
 
+const talentsAscensionMaterials = [
+    [...document.getElementsByClassName("stone")],
+    [...document.getElementsByClassName("collectable")], 
+    [...document.getElementsByClassName("boss")],
+    [...document.getElementsByClassName("unique-collectable")],
+    [...document.getElementsByClassName("book")],
+    [...document.getElementsByClassName("crown")]
+];
+
+// Loop through each list of materials
+talentsAscensionMaterials.forEach((materialList, index) =>{
+    // Loop through each material in each list
+    materialList.forEach((material) =>{
+
+        // Get current text and reset 
+        let text = material.innerHTML.split(" ");
+        material.innerHTML = "";
+
+        // Build new a href link
+        let link = document.createElement("a");
+        link.href = materialLinks[index];
+        link.target="_blank";
+        // Rebuild the original text
+        for(let i = 0; i < text.length; i++){
+            link.innerHTML += text[i] + " ";
+        }
+
+        // Readd to parent 
+        material.appendChild(link);
+    })
+});
+
+

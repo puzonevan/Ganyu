@@ -27,10 +27,17 @@ h1, h2, h3, h4, h5, h6{
     0px -4px 18px rgba(255,255,255,.1);
 }
 
-p{
+p, a{
     font-family: "Georama", sans-serif;
     font-size: 1em;
     color: #FFFFFF;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: #d7e1ec;
 }
 
 svg{
