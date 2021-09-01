@@ -22,10 +22,10 @@ const weapons = [
 
 // Get each artifact using DOM 
 const artifacts = [
-    document.getElementsByClassName("blizzard"),
-    document.getElementsByClassName("gladiator"),
-    document.getElementsByClassName("wanderer"),
-    document.getElementsByClassName("noblesse")
+    [...document.getElementsByClassName("blizzard")],
+    [...document.getElementsByClassName("gladiator")],
+    [...document.getElementsByClassName("wanderer")],
+    [...document.getElementsByClassName("noblesse")]
 ]
 
 // Loop through each weapon 
@@ -44,14 +44,6 @@ weapons.forEach((weapon, index) =>{
     title.innerHTML = "";
     title.appendChild(link);
 
-    // Events: Color hovers for text
-    title.addEventListener("mouseover", () =>{
-        title.firstElementChild.style.color = "#BF953F";
-    });
-    title.addEventListener("mouseout", () =>{
-        title.firstElementChild.style.color = "#faf4b7";
-    });
-
     // Events: scale hovers for image
     image.addEventListener("mouseover", () =>{
         image.firstElementChild.style.transform = "scale(1.1)";
@@ -64,4 +56,38 @@ weapons.forEach((weapon, index) =>{
         window.open(weaponLinks[index], "_blank");
     })
 
-})
+}); 
+
+// Loop through each type of artifact
+artifacts.forEach((artifactList, index) =>{
+    // Loop through each artifact in each list 
+    artifactList.forEach((artifact) =>{
+
+        // Get the title and image 
+        let title = artifact.firstElementChild;
+        let image = artifact.lastElementChild;
+        
+        // Create new link for the title 
+        let link = document.createElement("a");
+        link.href = artifactLinks[index];
+        link.target = "_blank";
+        link.style.color = "#faf4b7";
+        link.innerHTML = title.innerHTML; 
+
+        title.innerHTML = "";
+        title.appendChild(link);
+        
+        // Events: scale on hover
+        image.addEventListener("mouseover", () =>{
+            image.firstElementChild.style.transform = "scale(1.1)";
+        });
+        image.addEventListener("mouseout", () =>{
+            image.firstElementChild.style.transform = "scale(1)";
+        })
+
+        // Events: artifact link on image click
+        image.addEventListener("click", () =>{
+            window.open(artifactLinks[index], "_blank");
+        })
+    });
+});
