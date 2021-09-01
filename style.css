@@ -576,5 +576,69 @@ svg{
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px){
-    
+
+    /* Talents Ascension Materials */
+    .talents-ascension-section {
+        height: 700px;
+        padding: 2em 0;
+        position: relative;
+    }
+    .talents-ascension-section svg{
+        transform: rotate(90deg);
+        position: absolute;
+        top: 5em;
+        left: -2em;
+    }
+    .ganyu-splash{
+        display: none;
+    }
+    .talents-ascension{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .monster, .shivada, .books{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        margin: 1em 0em;
+    }
+    .monster .item, .shivada .item, .books .item{
+        max-width: 15%;
+    }
+    .talents-ascension .item img{
+        max-height: 50%;
+        display: block;
+    }
+    .talents-ascension .item p{
+        font-size: 1em;
+    }
+    .talents-ascension h2{
+        margin: .5em 0em;
+    }   
+
+    /* Weapons and Artifacts Section */
+    .build-section{
+        height: auto;
+        padding: 3em 0em; 
+    }
+    .build-section svg{
+        display: none;
+    }
+    .weapons-artifacts{
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .weapons-artifacts .or-text{
+        margin: 1em auto 2em auto;
+    }
+    .weapon img, .artifact img{
+        max-height: 30%;
+        top: -1.5em;
+    }
+    .weapon .large, .artifact .large{
+        max-height: 30%;
+    }
+    .weapon .small, .artifact .small{
+        max-height: 45%;
+    }
 }

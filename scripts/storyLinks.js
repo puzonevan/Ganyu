@@ -7,5 +7,4 @@ const storyLinks = [
     "https://genshin-impact.fandom.com/wiki/Ganyu/Story#Story_5",
     "https://genshin-impact.fandom.com/wiki/Ganyu/Story#The_Flora_of_Yujing_Terrace",
     "https://genshin-impact.fandom.com/wiki/Ganyu/Story#Vision",
-    
 ]
