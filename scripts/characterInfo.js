@@ -1,32 +1,38 @@
 
-const ganyu = {
+const character = {
     name: "Ganyu", 
 
     materials: {
-        stone: {
-            small: "Jade Sliver", 
-            medium: "Jade Fragment", 
-            large: "Jade Chunk", 
-            extraLarge: "Jade Gemstone", 
-            unique: "Hoarfrost Core"
-        },
-        collectable: {
-            small: "Whopperflower Nectar", 
-            medium: "Shimmering Nectar", 
-            large: "Energy Nectar", 
-            unique: "Qingxin"
-        },
-        book: {
-            small: "Teaching of Diligence",
-            medium: "Guide to Diligence", 
-            large: "Philosophies of Diligence", 
-        },
-        boss: {
-            unique: "Shadow of the Warrior"
-        },
-        crown: {
-            unique: "Crown of Insight"
-        }
+        stone: [
+            [1, 9, 9, 6, 46],
+            "Jade Sliver", 
+            "Jade Fragment", 
+            "Jade Chunk", 
+            "Jade Gemstone", 
+            "Hoarfrost Core",
+        ],
+        collectable: [
+            [18, 30, 36, 168],
+            [18, 66, 93, 3],
+            "Whopperflower Nectar", 
+            "Shimmering Nectar", 
+            "Energy Nectar", 
+            "Qingxin",
+        ],
+        book: [
+            [9, 63, 114, 18],
+            "Teaching of Diligence",
+            "Guide to Diligence", 
+            "Philosophies of Diligence", 
+        ],
+        boss: [
+            18,
+            "Shadow of the Warrior",
+        ],
+        crown: [
+            3,
+            "Crown of Insight",
+        ]
     },
 
     builds: [
@@ -117,5 +123,25 @@ const ganyu = {
     ],
 
 
-    
+
 }
+
+
+document.getElementById("character-name").innerHTML = character.name;
+
+[...document.getElementsByClassName("stone")].forEach((stone, index) =>{
+    stone.innerHTML = `${character.materials.stone[index + 1]} <strong>x${character.materials.stone[0][index]}</strong>`;
+});
+
+[...document.getElementsByClassName("collectable")].forEach((collect, index) =>{
+    if(index < 3){
+        collect.innerHTML = `${character.materials.collectable[index + 2]} <strong>x${character.materials.collectable[0][index]}</strong>`;
+    }
+    else{
+        collect.innerHTML = `${character.materials.collectable[index - 1]} <strong>x${character.materials.collectable[1][index - 3]}</strong>`;
+    }
+});
+
+[...document.getElementsByClassName("unique-collectable")].forEach((unique) =>{
+    unique.innerHTML = `${character.materials.collectable[5]} <strong>x${character.materials.collectable[0][3]}</strong>`
+})
