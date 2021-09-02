@@ -1,3 +1,7 @@
+/**
+ * Material/Ascension Links
+ *      - change the links below for different materials 
+ */
 const materialLinks = [
     "https://genshin-impact.fandom.com/wiki/Cryo_Regisvine#Rewards",
     "https://genshin-impact.fandom.com/wiki/Whopperflowers#Locations",
