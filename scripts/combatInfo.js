@@ -39,25 +39,64 @@ const combatInfo = [
     }
 ]
 
-const combatInfoContainer = document.getElementById("combat-info");
-const combatImageContainer = document.getElementById('abilities');
-const combatImageChildren = [...combatImageContainer.children];
-const combatBorder = document.getElementById('borderOpen');
+const constellationInfo = [
+    {
+        name: "Dew Drinker", 
+        description: "Taking DMG from a Charge Level 2 Frostflake Arrow or Frostflake Arrow Bloom decreases \
+                    opponents' Cryo RES by 15% for 6s. A hit regenerates 2 Energy for Ganyu. This effect can \
+                    only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself \
+                    or its Bloom hit the target."
+    },
+    {
+        name: "The Auspicious",
+        description: "Trail of the Qilin gains 1 additional charge."
+    },
+    {
+        name: "Cloud-Strider",
+        description: "Increases the Level of Celestial Shower by 3. Maximum upgrade level is 15."
+    },
+    {
+        name: "Westward Sojourn",
+        description: "Opponents standing within the AoE of Celestial Shower take increased DMG. \
+                    This effect strengthens over time. Increased DMG taken begins at 5% and increases \
+                    by 5% every 3s, up to a maximum of 25%. The effect lingers for 3s after the opponent \
+                    leaves the AoE."
+    },
+    {
+        name: "The Merciful",
+        description: "Increases the Level of Trail of the Qilin by 3. Maximum upgrade level is 15."
+    },
+    {
+        name: "The Clement",
+        description: "Using Trail of the Qilin causes the next Frostflake Arrow shot within 30s to not require charging"
+    }
+]
 
-combatImageChildren.forEach((ability, index) => {
+const abilityTitle = document.getElementById("ability-title");
+const constellationTitle = document.getElementById("constellation-title");
+const abilityImages = [...document.getElementById("abilities").children];
+const constellationImages = [...document.getElementById("constellations").children];
+
+console.log(abilityImages);
+console.log(constellationImages);
+
+for(let i = 0; i < abilityImages.length; i++){
     
-    ability.addEventListener('mouseover', function(e) {
-        ability.firstElementChild.style.transform = "scale(.9)";
+
+    abilityImages[i].addEventListener("mouseover", () =>{
+        abilityImages[i].style.transform = "scale(1.05)";
+        abilityTitle.innerHTML = combatInfo[i].name;
     });
-    ability.addEventListener('mouseout', function(e) {
-        ability.firstElementChild.style.transform = "scale(1)";
+    abilityImages[i].addEventListener("mouseout", () =>{
+        abilityImages[i].style.transform = "scale(1)";
     });
 
-    ability.addEventListener('click', function(e){
-        combatInfoContainer.firstElementChild.innerHTML = combatInfo[index].name;
-        combatInfoContainer.lastElementChild.innerHTML = combatInfo[index].description;
-        combatBorder.scrollIntoView({behavior: 'smooth'});
-    });
+    constellationImages[i].addEventListener("mouseover", () =>{
+        constellationImages[i].style.transform = "scale(1.05)";
+        constellationTitle.innerHTMl;
+    })
 
-});
+}
+
+
 
