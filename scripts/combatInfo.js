@@ -77,9 +77,6 @@ const constellationTitle = document.getElementById("constellation-title");
 const abilityImages = [...document.getElementById("abilities").children];
 const constellationImages = [...document.getElementById("constellations").children];
 
-console.log(abilityImages);
-console.log(constellationImages);
-
 for(let i = 0; i < abilityImages.length; i++){
     
 
@@ -93,8 +90,11 @@ for(let i = 0; i < abilityImages.length; i++){
 
     constellationImages[i].addEventListener("mouseover", () =>{
         constellationImages[i].style.transform = "scale(1.05)";
-        constellationTitle.innerHTMl;
-    })
+        constellationTitle.innerHTML = constellationInfo[i].name;
+    });
+    constellationImages[i].addEventListener("mouseout", () =>{
+        constellationImages[i].style.transform = "scale(1)";
+    });
 
 }
 

@@ -325,7 +325,7 @@ svg{
 }
 .combat-images .item img, 
 .constellation-images .item img{
-    max-width: 65%;
+    max-width: 60%;
     max-height: 100%;
     margin: 0 auto;
     border-radius: 50%;
