@@ -122,7 +122,65 @@ const character = {
         }
     ],
 
+    lore: [
+        {
+            name: "Introduction",
+            story: "The secretary to the Liyue Qixing. The blood of both human and illuminated beast flows within her veins.\
+                    Graceful and quiet by nature, yet the gentle disposition of qilin sees not even the slightest conflict with \
+                    even the most arduous of workloads. After all, Ganyu firmly believes that all the work she does is in honor of \
+                    her contract with Rex Lapis, seeking the well-being of all living things within Liyue. . .",
+        },
+        {
+            name: "Vision",
+            story:  "Qilin are paragons of benevolence among the adepti, drinking only springwater and eating only whole grain.\
+                    Flies they will not hurt, and a bruised reed they will not break. They do not travel in groups, and no trap will \
+                    hold them. They are leisurely yet composed, active but reserved — a gentle and elegant race. Yet when a wicked \
+                    beast from the sea arose and threatened the land  . . .",
+        },
+        {
+            name: "The Flora of Yujing Terrace",
+            story: "Handwritten notes detail the morphological features and behaviors of the plants in Yujing Terrace, with each \
+                    beautiful stroke penned by Ganyu's own hand. The notes are succinct, comprehensive, and well-categorized, and \
+                    even offer some insights that one would be hard-pressed to find elsewhere on the market. These include pointers \
+                    on caring for Glaze Lilies . . . " 
+        },
+        {
+            name: "Story 1",
+            story: "Ganyu is not the secretary of any one leader in the Liyue Qixing but is instead the general secretary for the \
+                    entire organization. Under her gentle exterior, Ganyu is as persevering as stone itself. This was something that \
+                    Rex Lapis, the leader of the adepti, noticed very early on. Thus when the Liyue Qixing first emerged ages ago, \
+                    Ganyu was their secretary. . ."
+        },
+        {
+            name: "Story 2",
+            story: "\"I work for the well-being of all living things in Liyue.\" Under almost all circumstances, Ganyu is a very \
+                    trustworthy secretary. It is hard to imagine anyone outperforming her in the face of such an enormous workload, \
+                    especially given her unique and penetrating insights into all of Liyue's matters. Nevertheless, her reliability \
+                    can only be guaranteed under \"almost all circumstances.\" The more important the matter. . ."
+        },
+        {
+            name: "Story 3",
+            story: "How long is a thousand years? Long enough for the Glaze Lilies that once teemed throughout Dihua Marsh to be wiped \
+                    out by floodwaters, and long enough for the thriving settlement that sprung up upon Guili Plains to come to ruin in \
+                    war. How short is a thousand years? To Ganyu, it has felt shorter than the blink of an eye. Throughout a passage of \
+                    time unimaginable to mortals. . ."
+        },
+        {
+            name: "Story 4",
+            story: "Outside the confines of her work, Ganyu very quickly shows how different she is from most other people. She has a \
+                    habit of taking afternoon naps and has a shockingly accurate internal clock. When lunch hour arrives, no matter where \
+                    she is, she will simply curl up into a ball and fall asleep on the spot. Even the raucous dancing of hilichurls will \
+                    fail to wake her. . ."
+        },
+        {
+            name: "Story 5",
+            story: "Ganyu's qilin heritage is little-known in Liyue Harbor. Whenever she is asked by someone walking along Feiyun Slope as \
+                    to the obvious protrusions in her hair, she says that they are ornamental heirlooms. \"If I told them the truth, they \
+                    would distance themselves from me...\" Despite never having been on particularly close terms with Liyue's citizens in the \
+                    first place. . . "
+        }
 
+    ]
 
 }
 
@@ -199,3 +257,4 @@ document.getElementById("character-name").innerHTML = character.name;
 
 });
 
+// Initialize Lore
