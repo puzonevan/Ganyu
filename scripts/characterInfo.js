@@ -198,3 +198,4 @@ document.getElementById("character-name").innerHTML = character.name;
     }); 
 
 });
+
