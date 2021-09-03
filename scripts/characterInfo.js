@@ -111,7 +111,7 @@ const character = {
                     image: "../ganyu/weapons/Item_Snowswept_Memory.png"
                 },
                 {
-                    name: "Blizzard Strayer", 
+                    name: "Noblesse Oblige", 
                     substat: "Atk% / Cryo DMG / Crit DMG",
                     description: "<strong>(2)</strong> Elemental Burst DMG +20%<br><br>\
                     <strong>(4)</strong> Using an Elemental Burst increase all party members' \
@@ -126,9 +126,11 @@ const character = {
 
 }
 
-
+// Initialize Character Title 
 document.getElementById("character-name").innerHTML = character.name;
 
+
+// Initialize Talent and Ascension Materials 
 [...document.getElementsByClassName("stone")].forEach((stone, index) =>{
     stone.innerHTML = `${character.materials.stone[index + 1]} <strong>x${character.materials.stone[0][index]}</strong>`;
 });
@@ -156,4 +158,43 @@ document.getElementById("character-name").innerHTML = character.name;
 
 [...document.getElementsByClassName("crown")].forEach((crown) =>{
     crown.innerHTML = `${character.materials.crown[1]} <strong>x${character.materials.crown[0]}</strong>`
-})
+});
+
+
+// Initialize Builds 
+[...document.getElementsByClassName("build")].forEach((build, index) =>{
+    
+    // Get current build from index 
+    let currentBuild = character.builds[index];
+
+    // Initialize build name and description
+    build.querySelector("#build-title").innerHTML = currentBuild.name;
+    build.querySelector("#build-description").innerHTML = currentBuild.description;
+
+    // Get the weapons div from the build 
+    let weapons = [...build.querySelector(".weapons-artifacts").querySelector(".weapons").querySelectorAll(".weapon")];
+
+    // Loop through each weapon div 
+    weapons.forEach((weapon, index) =>{
+        // Initialize weapon name, substat, description, image, 
+        weapon.querySelector("#weapon-title").innerHTML = currentBuild.weapons[index].name;
+        weapon.querySelector("#weapon-substat").innerHTML = currentBuild.weapons[index].substat;
+        weapon.querySelector("#weapon-description").innerHTML = currentBuild.weapons[index].description;
+        weapon.querySelector("#weapon-image").firstElementChild.src = currentBuild.weapons[index].image;
+        weapon.querySelector("#weapon-image").firstElementChild.alt = currentBuild.weapons[index].name;
+    });
+
+    // Get the Artifacts div from the build 
+    let artifacts = [...build.querySelector(".weapons-artifacts").querySelector(".artifacts").querySelectorAll(".artifact")];
+    
+    // Loop through each Artifact div
+    artifacts.forEach((artifact, index) =>{
+        // Initialize artifact name, substat, description, image, 
+        artifact.querySelector("#artifact-title").innerHTML = currentBuild.artifacts[index].name;
+        artifact.querySelector("#artifact-substats").innerHTML = currentBuild.artifacts[index].substat;
+        artifact.querySelector("#artifact-description").innerHTML = currentBuild.artifacts[index].description;
+        artifact.querySelector("#artifact-image").firstElementChild.src = currentBuild.artifacts[index].image;
+        artifact.querySelector("#artifact-image").firstElementChild.alt = currentBuild.artifacts[index].name;
+    }); 
+
+});
