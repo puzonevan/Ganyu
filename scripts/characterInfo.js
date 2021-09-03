@@ -258,3 +258,12 @@ document.getElementById("character-name").innerHTML = character.name;
 });
 
 // Initialize Lore
+[...document.getElementById("background").children].forEach((story, index) =>{
+    story.querySelector("#lore-title").innerHTML = character.lore[index].name;
+    story.querySelector("#lore-story").innerHTML = character.lore[index].story;
+});
+
+[...document.getElementById("stories").children].forEach((story, index) =>{
+    story.querySelector("#lore-title").innerHTML = character.lore[index + 3].name;
+    story.querySelector("#lore-story").innerHTML = character.lore[index + 3].story;
+})
