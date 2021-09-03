@@ -98,5 +98,3 @@ for(let i = 0; i < abilityImages.length; i++){
 
 }
 
-
-
