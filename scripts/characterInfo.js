@@ -31,7 +31,7 @@ const character = {
         ],
         crown: [
             3,
-            "Crown of Insight",
+            "Crown of Insights",
         ]
     },
 
@@ -143,5 +143,17 @@ document.getElementById("character-name").innerHTML = character.name;
 });
 
 [...document.getElementsByClassName("unique-collectable")].forEach((unique) =>{
-    unique.innerHTML = `${character.materials.collectable[5]} <strong>x${character.materials.collectable[0][3]}</strong>`
+    unique.innerHTML = `${character.materials.collectable[5]} <strong>x${character.materials.collectable[0][3]}</strong>`;
+});
+
+[...document.getElementsByClassName("book")].forEach((book, index) =>{
+    book.innerHTML = `${character.materials.book[index + 1]} <strong>x${character.materials.stone[0][index]}</strong>`;
+});
+
+[...document.getElementsByClassName("boss")].forEach((boss) =>{
+    boss.innerHTML = `${character.materials.boss[1]} <strong>x${character.materials.boss[0]}</strong>`;
+});
+
+[...document.getElementsByClassName("crown")].forEach((crown) =>{
+    crown.innerHTML = `${character.materials.crown[1]} <strong>x${character.materials.crown[0]}</strong>`
 })
