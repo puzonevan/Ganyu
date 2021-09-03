@@ -184,11 +184,11 @@ const character = {
 
 }
 
-// Initialize Character Title 
+// Change Character Title 
 document.getElementById("character-name").innerHTML = character.name;
 
 
-// Initialize Talent and Ascension Materials 
+// Change Talent and Ascension Materials 
 [...document.getElementsByClassName("stone")].forEach((stone, index) =>{
     stone.innerHTML = `${character.materials.stone[index + 1]} <strong>x${character.materials.stone[0][index]}</strong>`;
 });
@@ -219,7 +219,7 @@ document.getElementById("character-name").innerHTML = character.name;
 });
 
 
-// Initialize Builds 
+// Change Builds 
 [...document.getElementsByClassName("build")].forEach((build, index) =>{
     
     // Get current build from index 
@@ -257,7 +257,7 @@ document.getElementById("character-name").innerHTML = character.name;
 
 });
 
-// Initialize Lore
+// Change Lore
 [...document.getElementById("background").children].forEach((story, index) =>{
     story.querySelector("#lore-title").innerHTML = character.lore[index].name;
     story.querySelector("#lore-story").innerHTML = character.lore[index].story;
