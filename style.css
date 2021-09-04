@@ -332,7 +332,6 @@ svg{
     margin: 0 auto;
     border-radius: 50%;
     border: 2px solid #FEFEFE;
-    
     box-shadow: rgba(0, 0, 0, 0.7) 0px 25px 20px -20px;
 }
 
@@ -611,13 +610,35 @@ svg{
     }
     
     /* Combat Section */
-    .combat-section, 
-    .constellation-section{
+    .combat-section{
         padding: 2em 0em;
+    }
+    .combat-section #abilities-constellation{
+        display: flex;
+        justify-content: space-around;
+    }
+    .abilities-constellation{
+        padding: 2em 0em;
+        width: 45%;
+    }
+    .abilities-constellation .border-top{
+        display: none;
     }
     .combat-images, 
     .constellation-images{
         flex-direction: column;
+        justify-content: center;
+        height: 30em;
+        padding-top: 0em;
+    }
+    .combat-images .item img, 
+    .constellation-images .item img{
+        max-width: 40%;
+        margin: 1em auto;
+    }
+
+    .abilities-constellation h3{
+        display: none;
     }
 
     /* Background and Story Section */

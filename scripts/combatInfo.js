@@ -9,7 +9,8 @@ const combatInfo = [
                     &emsp; &emsp; Charge Level 2: Fires off a Frostflake Arrow that deals <strong>Cryo DMG</strong><br>\
                     &emsp; &emsp; The Frostflake Arrow blooms after hitting its target, dealing <strong>AoE Cryo DMG</strong><br><br>\
                     Plunging Attack: Fires off a shower of arrows in mid-air before falling \
-                    and striking the ground, dealing AoE DMG upon impact."
+                    and striking the ground, dealing AoE DMG upon impact.",
+        
     },
     {
         name: "Trail of the Qilin", 

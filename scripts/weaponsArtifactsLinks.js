@@ -52,14 +52,14 @@ weapons.forEach((weapon, index) =>{
     // Events: scale hovers for image
     image.addEventListener("mouseover", () =>{
         image.firstElementChild.style.transform = "scale(1.1)";
-    })
+    });
     image.addEventListener("mouseout", () =>{
         image.firstElementChild.style.transform = "scale(1)";
-    })
+    });
     // Events: open weapon link on click
     image.addEventListener("click", () =>{
         window.open(weaponLinks[index], "_blank");
-    })
+    });
 
 }); 
 
@@ -67,7 +67,7 @@ weapons.forEach((weapon, index) =>{
 artifacts.forEach((artifactList, index) =>{
     // Loop through each artifact in each list 
     artifactList.forEach((artifact) =>{
-
+    
         // Get the title and image 
         let title = artifact.firstElementChild;
         let image = artifact.lastElementChild;
@@ -88,11 +88,11 @@ artifacts.forEach((artifactList, index) =>{
         });
         image.addEventListener("mouseout", () =>{
             image.firstElementChild.style.transform = "scale(1)";
-        })
+        });
 
         // Events: artifact link on image click
         image.addEventListener("click", () =>{
             window.open(artifactLinks[index], "_blank");
-        })
+        });
     });
 });
