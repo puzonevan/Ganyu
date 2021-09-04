@@ -87,6 +87,13 @@ for(let i = 0; i < abilityImages.length; i++){
     abilityImages[i].addEventListener("mouseout", () =>{
         abilityImages[i].style.transform = "scale(1)";
     });
+    abilityImages[i].addEventListener("click", () =>{
+        document.getElementById("combat-title").innerHTML = combatInfo[i].name;
+        document.getElementById("combat-description").innerHTML = combatInfo[i].description;
+        document.getElementById("combat-overlay").style.zIndex = "2";
+        document.getElementById("combat-overlay").style.opacity = "1";
+        document.getElementById("abilities-constellation").style.opacity = "0";
+    });
 
     constellationImages[i].addEventListener("mouseover", () =>{
         constellationImages[i].style.transform = "scale(1.05)";
@@ -96,5 +103,14 @@ for(let i = 0; i < abilityImages.length; i++){
         constellationImages[i].style.transform = "scale(1)";
     });
 
+    constellationImages[i].addEventListener("click", () =>{
+        document.getElementById("combat-title").innerHTML = constellationInfo[i].name;
+        document.getElementById("combat-description").innerHTML = constellationInfo[i].description;
+        document.getElementById("combat-overlay").style.zIndex = "2";
+        document.getElementById("combat-overlay").style.opacity = "1";
+        document.getElementById("abilities-constellation").style.opacity = "0";
+    });
+
 }
+
 

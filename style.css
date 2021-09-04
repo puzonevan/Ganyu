@@ -367,15 +367,14 @@ svg{
 
     height: 100vh;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: .5s;
     background: #28282b;
-    
+    z-index: -1;
 }
 
 .overlay-box{
     background: #F5F5F5;
-    border-radius: 2%;
     width: 80%;
     height: auto;
     position: relative;
