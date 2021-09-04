@@ -403,10 +403,22 @@ svg{
     font-weight: 400;
     font-size: 1em;
     width: 80%;
-    margin: 0 auto;
+    margin: 0em auto 3em auto;
     line-height: 1.3em;
 }
 
+.overlay-box i{
+    position: absolute; 
+    top: 1em;
+    right: 1.5em;
+    padding: .3em;
+}
+.overlay-box i:hover{
+    background-color: #f70d1a;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: .2s;
+}
 
 /* Background and Story */
 .lore-section{

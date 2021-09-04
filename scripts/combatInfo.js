@@ -77,6 +77,12 @@ const constellationTitle = document.getElementById("constellation-title");
 const abilityImages = [...document.getElementById("abilities").children];
 const constellationImages = [...document.getElementById("constellations").children];
 
+document.getElementById("combat-exit").addEventListener("click", () =>{
+    document.getElementById("combat-overlay").style.opacity = "0";
+    document.getElementById("abilities-constellation").style.opacity = "1";
+    document.getElementById("combat-overlay").style.zIndex = "-1";
+});
+
 for(let i = 0; i < abilityImages.length; i++){
     
 
@@ -93,6 +99,7 @@ for(let i = 0; i < abilityImages.length; i++){
         document.getElementById("combat-overlay").style.zIndex = "2";
         document.getElementById("combat-overlay").style.opacity = "1";
         document.getElementById("abilities-constellation").style.opacity = "0";
+        document.getElementById("combat-video").style.display = "block";
     });
 
     constellationImages[i].addEventListener("mouseover", () =>{
@@ -109,6 +116,7 @@ for(let i = 0; i < abilityImages.length; i++){
         document.getElementById("combat-overlay").style.zIndex = "2";
         document.getElementById("combat-overlay").style.opacity = "1";
         document.getElementById("abilities-constellation").style.opacity = "0";
+        document.getElementById("combat-video").style.display = "none";
     });
 
 }
