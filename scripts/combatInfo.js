@@ -10,6 +10,7 @@ const combatInfo = [
                     &emsp; &emsp; The Frostflake Arrow blooms after hitting its target, dealing <strong>AoE Cryo DMG</strong><br><br>\
                     Plunging Attack: Fires off a shower of arrows in mid-air before falling \
                     and striking the ground, dealing AoE DMG upon impact.",
+        video: "/ganyu/combat/Liutian_Archery_Charged.mp4"
         
     },
     {
@@ -17,18 +18,20 @@ const combatInfo = [
         description: "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and \
                     dealing AoE Cryo DMG.<br> Ice Lotus:<br> 1. Continuously taunts surrounding\
                     opponents, attracting them to attack it.<br> 2. Endurance scales based on Ganyu's Max HP.<br>\
-                    3. Blooms profusely when destroyed or once its duration ends, dealing <strong>AoE Cryo DMG.<strong>"
+                    3. Blooms profusely when destroyed or once its duration ends, dealing <strong>AoE Cryo DMG.<strong>",
+        video: "/ganyu/combat/Trail_of_the_Qilin.mp4"
     },
     {
         name: "Celestial Shower",
         description: "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.<br>\
                     During its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, \
-                    striking opponents within an AoE and dealing <strong>Cryo DMG</strong>."
+                    striking opponents within an AoE and dealing <strong>Cryo DMG</strong>.",
+        video: "/ganyu/combat/Celestial_Shower.mp4"
     },
     {
         name: "Undivided Heart",
         description: "After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their \
-        resulting bloom effects is increased by <strong>20%</strong> for 5s."
+        resulting bloom effects is increased by <strong>20%</strong> for 5s.",
     },
     {
         name: "Harmony between Heaven and Earth",
@@ -36,7 +39,8 @@ const combatInfo = [
     },
     {
         name: "Preserved for the Hunt",
-        description: "Refunds <strong>15%</strong> of the ores used when crafting Bow-type weapons."
+        description: "Refunds <strong>15%</strong> of the ores used when crafting Bow-type weapons.",
+        video: "/ganyu/combat/Preserved_for_the_Hunt.mp4"
     }
 ]
 
@@ -95,12 +99,26 @@ for(let i = 0; i < abilityImages.length; i++){
         abilityImages[i].style.transform = "scale(1)";
     });
     abilityImages[i].addEventListener("click", () =>{
+
+        // Change Title and Description
         document.getElementById("combat-title").innerHTML = combatInfo[i].name;
         document.getElementById("combat-description").innerHTML = combatInfo[i].description;
+
+        // Change Video
+        if(combatInfo[i].hasOwnProperty('video')){
+            // document.getElementById("combat-video").firstElementChild.firstElementChild.src = combatInfo[i].video;
+        }
+        else{
+            document.getElementById("combat-video").style.display = "none";
+        }
+        
+
+        // Animation
         document.getElementById("combat-overlay").style.zIndex = "2";
         document.getElementById("combat-overlay").style.opacity = "1";
         document.getElementById("abilities-constellation").style.opacity = "0";
         document.getElementById("combat-video").style.display = "block";
+
     });
 
     constellationImages[i].addEventListener("mouseover", () =>{

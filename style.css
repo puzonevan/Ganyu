@@ -45,6 +45,10 @@ svg{
     transition: .5s;
 }
 
+video {
+    margin: 0em auto 1.5em auto;
+}
+
 .opening-section, .talents-ascension-section, 
 .image-video-section, .combat-section, 
 .title-section, .constellation-section, 
