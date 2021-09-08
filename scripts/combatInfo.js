@@ -106,10 +106,10 @@ for(let i = 0; i < abilityImages.length; i++){
 
         // Change Video
         if(combatInfo[i].hasOwnProperty('video')){
-            // document.getElementById("combat-video").firstElementChild.firstElementChild.src = combatInfo[i].video;
+            document.getElementById("combat-video").firstElementChild.src = combatInfo[i].video;
         }
         else{
-            document.getElementById("combat-video").style.display = "none";
+            document.getElementById("combat-video").firstElementChild.style.display = "none";
         }
         
 
