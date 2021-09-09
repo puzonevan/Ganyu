@@ -501,6 +501,18 @@ video {
 }
 
 /* Art Section  */
+.art-section{
+    margin: 0 auto;
+}
+.lore-container{
+    width: 33.33333%;
+    overflow: hidden;
+    height: fit-content;
+    display: block;
+    position: relative;
+    float: left;
+}
+
 
 .path{
     transform: scale(1.5);
