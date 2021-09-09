@@ -79,18 +79,21 @@ const constellationInfo = [
 
 const abilityTitle = document.getElementById("ability-title");
 const constellationTitle = document.getElementById("constellation-title");
+
 const abilityImages = [...document.getElementById("abilities").children];
 const constellationImages = [...document.getElementById("constellations").children];
 
+// Animation: Exit 
 document.getElementById("combat-exit").addEventListener("click", () =>{
     document.getElementById("combat-overlay").style.opacity = "0";
     document.getElementById("abilities-constellation").style.opacity = "1";
     document.getElementById("combat-overlay").style.zIndex = "-1";
 });
 
+// Loop through each ability 
 for(let i = 0; i < abilityImages.length; i++){
     
-
+    // Animation Enlarge Ability
     abilityImages[i].addEventListener("mouseover", () =>{
         abilityImages[i].style.transform = "scale(1.05)";
         abilityTitle.innerHTML = combatInfo[i].name;
@@ -98,6 +101,8 @@ for(let i = 0; i < abilityImages.length; i++){
     abilityImages[i].addEventListener("mouseout", () =>{
         abilityImages[i].style.transform = "scale(1)";
     });
+
+
     abilityImages[i].addEventListener("click", () =>{
 
         // Change Title and Description
@@ -121,6 +126,7 @@ for(let i = 0; i < abilityImages.length; i++){
 
     });
 
+    // Animation: Enlarge Constellation
     constellationImages[i].addEventListener("mouseover", () =>{
         constellationImages[i].style.transform = "scale(1.05)";
         constellationTitle.innerHTML = constellationInfo[i].name;
@@ -130,8 +136,11 @@ for(let i = 0; i < abilityImages.length; i++){
     });
 
     constellationImages[i].addEventListener("click", () =>{
+        // Change Title and Description 
         document.getElementById("combat-title").innerHTML = constellationInfo[i].name;
         document.getElementById("combat-description").innerHTML = constellationInfo[i].description;
+
+        // Animation
         document.getElementById("combat-overlay").style.zIndex = "2";
         document.getElementById("combat-overlay").style.opacity = "1";
         document.getElementById("abilities-constellation").style.opacity = "0";
