@@ -28,6 +28,9 @@ background.forEach((card, index) =>{
         window.open(storyLinks[index], "_blank");
     });
 
+    
+        
+
 });
 
 // Loop through each story card for the character
