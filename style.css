@@ -504,11 +504,11 @@ video {
 .art-section{
     margin: 0 auto;
 }
+
 .lore-container{
-    width: 33.33333%;
+    width: 33.333333%;
     overflow: hidden;
     height: fit-content;
-    display: block;
     position: relative;
     float: left;
 }
