@@ -540,6 +540,7 @@ video {
 
 @media only screen and (max-width: 480px){
 
+    /* Universals */
     body{
         overflow-x: hidden;
     }
@@ -674,9 +675,23 @@ video {
         width: 65%;
     }
 
+    /* Art Section */
+    .lore-container{
+        width: 100%;
+        height: fit-content;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px){
+
+    /* Universals */
+    body{
+        overflow-x: hidden;
+    }
+    video {
+        margin: 0 auto;
+    }
 
     /* Talents Ascension Materials */
     .talents-ascension-section {
@@ -741,5 +756,55 @@ video {
     }
     .weapon .small, .artifact .small{
         max-height: 45%;
+    }
+
+    /* Combat Section */
+    .combat-section{
+        padding: 2em 0em;
+    }
+    .combat-section #abilities-constellation{
+        display: flex;
+        justify-content: space-around;
+    }
+    .abilities-constellation{
+        padding: 2em 0em;
+        width: 45%;
+    }
+    .abilities-constellation .border-top{
+        display: none;
+    }
+    .combat-images, 
+    .constellation-images{
+        flex-direction: column;
+        justify-content: center;
+        height: 35em;
+    }
+    .combat-images .item img, 
+    .constellation-images .item img{
+        max-width: 25%;
+        margin: 1em auto;
+    }
+    .abilities-constellation h3{
+        display: none;
+    }
+
+    /* Background and Story Section */
+    .lore-section{
+        margin: 0em;
+        height: auto;
+    }
+    .background, .stories{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        height: 13em;
+        width: 80%;
+    }
+
+    /* Art Section */
+    .lore-container{
+        width: 100%;
+        height: fit-content;
     }
 }
