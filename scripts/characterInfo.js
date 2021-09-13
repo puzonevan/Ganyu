@@ -47,7 +47,7 @@ const character = {
                     description: "Increases Normal Attack and Aimed Shot DMG by 12/15/18/21/24%. Increases DMG from \
                                 arrows shot by a further 8/10/12/14/16% for every 0.1s that the arrow is in flight, up \
                                 to 0.5s. Stacks up to 5 times on each arrow.",
-                    image: "./ganyu/weapons/Weapon_Amos'_Bow.png"
+                    image: "./ganyu/weapons/Weapon_Amos_Bow.png"
                 },
                 {
                     name: "Prototype Crescent",
@@ -68,7 +68,7 @@ const character = {
                     name: "Gladiator's Finale", 
                     substat: "Atk% / Cryo DMG / Crit DMG",
                     description: "<strong>(2)</strong> ATK +18%",
-                    image: "./ganyu/weapons/Item_Gladiator's_Nostalgia.png"
+                    image: "./ganyu/weapons/Item_Gladiators_Nostalgia.png"
                 },
                 {
                     name: "Blizzard Strayer", 
