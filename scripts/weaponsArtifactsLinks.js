@@ -3,6 +3,7 @@
  *      - change the links below for either weapons or artifacts 
  *      - change the id for html and weapons/artifacts 
  */
+
 const weaponLinks = [
     "https://genshin-impact.fandom.com/wiki/Amos%27_Bow",
     "https://genshin-impact.fandom.com/wiki/Prototype_Crescent",
