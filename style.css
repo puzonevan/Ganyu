@@ -560,6 +560,9 @@ video {
     .title-section h2{
         font-size: 1.75em;
     }
+    .opening-section img{
+        max-width: 25%;
+    }
 
     .container{
         width: 100%;
