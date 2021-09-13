@@ -1,3 +1,9 @@
+/**
+ * Combat Information 
+ *      - When user clicks on an ability or constellation, change the lightbox information
+ *      - Change the abilities and constellation information below based on the character
+ */
+
 const combatInfo = [
     {
         name: "Liuthian Archery", 
@@ -77,9 +83,11 @@ const constellationInfo = [
     }
 ]
 
+// Get titles from dom 
 const abilityTitle = document.getElementById("ability-title");
 const constellationTitle = document.getElementById("constellation-title");
 
+// Get images from dom
 const abilityImages = [...document.getElementById("abilities").children];
 const constellationImages = [...document.getElementById("constellations").children];
 

@@ -1,4 +1,9 @@
-quotes = [
+/**
+ * Random Quote Generator 
+ *      - Change the quotes below based on the character 
+ */
+
+const quotes = [
     'If you lie on the grass, you can feel the heartbeat of the world.', 
     'To exist in the first place is a beautiful thing, and that\'s enough... isn\'t it?', 
     'With authority over a thousand comes responsibility to a thousand.', 
@@ -8,10 +13,13 @@ quotes = [
     'Should the time come for battle, and should you need me, then I will give it every ounce of my strength.'
 ]
 
+// Get the dom 
 const randomQuote = document.getElementById('randomQuote');
 
+// Function to change quote randomly 
 const getRandomQuote = (e) =>{
     randomQuote.innerHTML = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
 }
 
+// Set to change randomly on load 
 window.onload = getRandomQuote;

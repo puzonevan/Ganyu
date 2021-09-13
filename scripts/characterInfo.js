@@ -1,5 +1,12 @@
+/**
+ * Character Info 
+ *      - Change the character object below based on the character 
+ *      - Change the name, materials, builds, and lore 
+ *      - Initializes the HTML based on the character
+ */
 
 const character = {
+
     name: "Ganyu", 
 
     materials: {
