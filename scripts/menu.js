@@ -23,6 +23,12 @@ gif.addEventListener("click", () =>{
         backgroundAnchor.style.zIndex = "4";
         artworkAnchor.style.zIndex = "4";
 
+        materialsAnchor.style.opacity = "0";
+        buildsAnchor.style.opacity = "0";
+        combatAnchor.style.opacity = "0";
+        backgroundAnchor.style.opacity = "0";
+        artworkAnchor.style.opacity = "0";
+
         materialsAnchor.style.transform = "translateY(0)";
         buildsAnchor.style.transform = "translateY(0)";
         combatAnchor.style.transform = "translateY(0)";
@@ -37,6 +43,12 @@ gif.addEventListener("click", () =>{
         combatAnchor.style.zIndex = "6";
         backgroundAnchor.style.zIndex = "6";
         artworkAnchor.style.zIndex = "6";
+
+        materialsAnchor.style.opacity = "1";
+        buildsAnchor.style.opacity = "1";
+        combatAnchor.style.opacity = "1";
+        backgroundAnchor.style.opacity = "1";
+        artworkAnchor.style.opacity = "1";
 
         materialsAnchor.style.transform = "translateY(-300px)";
         buildsAnchor.style.transform = "translateY(-250px)";

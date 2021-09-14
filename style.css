@@ -88,7 +88,7 @@ video {
     width: 2em;
     height: 2em;
     background-color: #FFFFFF;
-    opacity: 1;
+    opacity: 0;
     border: 1px solid #f70d1a;
 
     border-radius: 50%;
