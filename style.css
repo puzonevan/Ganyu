@@ -67,14 +67,37 @@ video {
     justify-content: center;
     align-items: center;
 }
+
 .opening-section h1, .title-section h1{
     font-size: 4em;
 }
+
 .opening-section p{
     font-size: 1.5em;
     color: #F5F5F5;
     padding: .5em;
 }
+
+.menu i{
+    z-index: 4;
+
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+
+    width: 2em;
+    height: 2em;
+    background-color: #FFFFFF;
+    opacity: 1;
+    border: 1px solid #f70d1a;
+
+    border-radius: 50%;
+    transition: .5s;
+}
+.menu i:hover{
+    background-color: #28282B;
+}
+
 .opening-section img{
     position: fixed;
     right: 1.5em;
