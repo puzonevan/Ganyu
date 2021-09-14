@@ -214,7 +214,7 @@ document.getElementById("character-name").innerHTML = character.name;
 });
 
 [...document.getElementsByClassName("book")].forEach((book, index) =>{
-    book.innerHTML = `${character.materials.book[index + 1]} <strong>x${character.materials.stone[0][index]}</strong>`;
+    book.innerHTML = `${character.materials.book[index + 1]} <strong>x${character.materials.book[0][index]}</strong>`;
 });
 
 [...document.getElementsByClassName("boss")].forEach((boss) =>{
