@@ -38,17 +38,7 @@ const artifacts = [
 weapons.forEach((weapon, index) =>{
 
     // Get title and image
-    let title = weapon.firstElementChild;
     let image = weapon.lastElementChild;
-    
-    // Create new a href link for title
-    let link = document.createElement("a");
-    link.style.color = "#faf4b7";
-    link.href = weaponLinks[index];
-    link.target = "_blank";
-    link.innerHTML = title.innerHTML;
-    title.innerHTML = "";
-    title.appendChild(link);
 
     // Events: scale hovers for image
     image.addEventListener("mouseover", () =>{
@@ -69,19 +59,8 @@ artifacts.forEach((artifactList, index) =>{
     // Loop through each artifact in each list 
     artifactList.forEach((artifact) =>{
     
-        // Get the title and image 
-        let title = artifact.firstElementChild;
+        // Get the title and image
         let image = artifact.lastElementChild;
-        
-        // Create new link for the title 
-        let link = document.createElement("a");
-        link.href = artifactLinks[index];
-        link.target = "_blank";
-        link.style.color = "#faf4b7";
-        link.innerHTML = title.innerHTML; 
-
-        title.innerHTML = "";
-        title.appendChild(link);
         
         // Events: scale on hover
         image.addEventListener("mouseover", () =>{
