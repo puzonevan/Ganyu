@@ -16,7 +16,7 @@ const combatInfo = [
                     &emsp; &emsp; The Frostflake Arrow blooms after hitting its target, dealing <strong>AoE Cryo DMG</strong><br><br>\
                     Plunging Attack: Fires off a shower of arrows in mid-air before falling \
                     and striking the ground, dealing AoE DMG upon impact.",
-        video: "/ganyu/combat/Liutian_Archery_Charged.mp4"
+        video: "./ganyu/combat/Liutian_Archery_Charged.mp4"
         
     },
     {
@@ -25,14 +25,14 @@ const combatInfo = [
                     dealing AoE Cryo DMG.<br> Ice Lotus:<br> 1. Continuously taunts surrounding\
                     opponents, attracting them to attack it.<br> 2. Endurance scales based on Ganyu's Max HP.<br>\
                     3. Blooms profusely when destroyed or once its duration ends, dealing <strong>AoE Cryo DMG.<strong>",
-        video: "/ganyu/combat/Trail_of_the_Qilin.mp4"
+        video: "./ganyu/combat/Trail_of_the_Qilin.mp4"
     },
     {
         name: "Celestial Shower",
         description: "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.<br>\
                     During its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, \
                     striking opponents within an AoE and dealing <strong>Cryo DMG</strong>.",
-        video: "/ganyu/combat/Celestial_Shower.mp4"
+        video: "./ganyu/combat/Celestial_Shower.mp4"
     },
     {
         name: "Undivided Heart",
@@ -46,7 +46,7 @@ const combatInfo = [
     {
         name: "Preserved for the Hunt",
         description: "Refunds <strong>15%</strong> of the ores used when crafting Bow-type weapons.",
-        video: "/ganyu/combat/Preserved_for_the_Hunt.mp4"
+        video: "./ganyu/combat/Preserved_for_the_Hunt.mp4"
     }
 ]
 
