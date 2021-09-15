@@ -429,6 +429,7 @@ video {
     font-weight: 400;
     font-size: 1em;
     width: 80%;
+    text-align: left;
     margin: 0em auto 3em auto;
     line-height: 1.3em;
 }
@@ -686,6 +687,9 @@ video {
 
     .abilities-constellation h3{
         display: none;
+    }
+    .overlay-box{
+        width: 90%;
     }
 
     /* Background and Story Section */
