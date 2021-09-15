@@ -1,4 +1,4 @@
-# Ganyuwu
+# Ganyu
 
 ## Overview 
 
