@@ -26,29 +26,6 @@ talentsAscensionMaterials.forEach((materialList, index) =>{
     // Loop through each material in each list
     materialList.forEach((material) =>{
 
-        // Get current text and reset 
-        let text = material.innerHTML.split(" ");
-        material.innerHTML = "";
-
-        // Build new a href link
-        let link = document.createElement("a");
-        link.href = materialLinks[index];
-        link.target="_blank";
-        // Rebuild the original text
-        for(let i = 0; i < text.length; i++){
-            link.innerHTML += text[i] + " ";
-        }
-
-        // Readd to parent 
-        material.appendChild(link);
-    })
-});
-
-// Loop through each list of materials
-talentsAscensionMaterials.forEach((materialList, index) =>{
-    // Loop through each material in each list
-    materialList.forEach((material) =>{
-
         // Get the image that goes along with the material
         const imageSibling = material.previousElementSibling;
         
