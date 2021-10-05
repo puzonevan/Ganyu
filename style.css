@@ -534,7 +534,7 @@ video {
     transform: scale(1.5);
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: dash 40s linear forwards;
+    animation: dash 35s linear forwards;
 }
 
 .border{
